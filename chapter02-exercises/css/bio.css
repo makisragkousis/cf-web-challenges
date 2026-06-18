@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.text-lightgray {
+    color: lightgray;
+    font-weight: bold;
+}
+
+ul {
+    background-color: lightgray;
+    border: 5px solid purple;
+    display: inline-block;
+    padding: 15px 50px 15px 35px;
+}
+
+a {
+    color: orange;
+}

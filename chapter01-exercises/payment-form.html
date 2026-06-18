@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Πληρωμής</title>
+</head>
+<body>
+
+    <form>
+        <h1>Φόρμα Πληρωμής</h1>
+
+        <table>
+            <tr>
+                <td>
+                    <p>Τα υποχρεωτικά πεδία ακολουθούνται από</p>
+                </td>
+                <td>
+                    <p><abbr title="Required field">*</abbr></p>
+                </td>
+                <td>
+                    <p>.</p>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <h2>Προσωπικά Στοιχεία</h2>
+
+            <fieldset style="width: 240px;">
+                <legend>Title</legend>
+                <div>
+                    <input type="radio" name="info" id="Mr" value="Mr">
+                    <label for="Mr">Mr.</label>
+                </div>
+                <div>
+                    <input type="radio" name="info" id="Ms" value="Ms">
+                    <label for="Ms">Ms.</label>
+                </div>
+                <div>
+                    <input type="radio" name="info" id="Dr" value="Dr">
+                    <label for="Dr">Dr.</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="fldName">Name: <abbr title="Required field">*</abbr></label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="fldName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fldEmail">E-mail: <abbr title="Required field">*</abbr></label>
+                    </td>
+                    <td>
+                        <input type="email" name="e-mail" id="fldEmail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fldPassword">Password: <abbr title="Required field">*</abbr></label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="fldPassword">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Πληροφορίες Πληρωμής</h2>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="fldCardtype">Card type: <abbr title="Required field">*</abbr></label>
+                    </td>
+                    <td>
+                        <select name="cardtype" id="fldCardtype">
+                            <option value="1">Visa</option>
+                            <option value="2">Mastercard</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fldCardnumber">Card Number: <abbr title="Required field">*</abbr></label>
+                    </td>
+                    <td>
+                        <input type="text" name="cardnumber" id="fldCardnumber">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fldExpirationdate">Expiration Date: <abbr title="Required field">*</abbr></label>
+                    </td>
+                    <td>
+                        <input type="text" name="expirationdate" id="fldExpirationdate" placeholder="MM/YY">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Προχωρήστε στην πληρωμή">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+
+</body>
+</html>
